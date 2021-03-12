@@ -64,6 +64,7 @@ public class SearchTest {
 		for (int i = 0; i < numberOfTests; i++) {
 			runningSum += sequentialSearchForKeyWithCount(randomSortedNumbers, randomSortedNumbers[generator.nextInt(randomSortedNumbers.length)]);
 		}
+		
 		return runningSum/numberOfTests;
 	}
 
@@ -94,6 +95,7 @@ public class SearchTest {
 		for (int i = 0; i < numberOfTests; i++) {
 			runningSum += binarySearchForKeyWithCount(randomSortedNumbers, randomSortedNumbers[generator.nextInt(randomSortedNumbers.length)]);
 		}
+		
 		return runningSum/numberOfTests;
 	}
 
@@ -144,6 +146,7 @@ public class SearchTest {
 			else // if (vals[mid] > key) is the only case left, so we don't need to check it.
 				hi = mid - 1;
 		}
+		
 		return -1;
 	}
 
@@ -169,6 +172,7 @@ public class SearchTest {
 			else // if (vals[mid] > key) is the only case left, so we don't need to check it.
 				hi = mid - 1;
 		}
+		
 		return loopCount;
 	}
 
@@ -186,6 +190,7 @@ public class SearchTest {
 			if (key == values[index])
 				return index;
 		}
+		
 		return -1;
 	}
 
@@ -205,6 +210,7 @@ public class SearchTest {
 			if (key == values[index])
 				break;
 		}
+		
 		return loopCount;
 	}
 
